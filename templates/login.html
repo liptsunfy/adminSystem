@@ -1,0 +1,31 @@
+{% load static %}
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+
+        <title>火车爱好者</title>
+    </head>
+
+    <body>
+        <div class="login">
+            <div class="login_h2">
+                <h1>管理员登录</h1>
+            </div>
+
+            <div class="login_form">
+                <form method='post' action="/login/">
+                    <input name="userID" type="text" placeholder="userID" ><br>
+                    <input name="password" type="password" placeholder="password"><br>
+                    {{ error }}<br>
+                    <button id="btn" type="submit">
+                        <h3>登陆</h3>
+                    </button>
+                    {% csrf_token %}
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>

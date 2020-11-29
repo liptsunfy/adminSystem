@@ -1,0 +1,51 @@
+{% extends 'CanlinkSystem/base.html' %}
+
+<!-- 替换与填充内容 -->
+{% block contentage %}
+
+<div class="container-fluid p-0">
+	<div class="row">
+		<div class="col-12">
+			<div class="card">
+				<div class="card-header">
+					<div class="form-row">
+						<div class="form-group col-md-4">
+							<label for="inputState">普铁/高铁</label>
+							<select id="inputState" class="form-control">
+								<option selected>请选择...</option>
+								<option>普铁</option>
+                                <option>高铁</option>
+							</select>
+						</div>
+                        <div class="form-group col-md-4">
+							<label for="inputState">铁路局</label>
+							<select id="inputState" class="form-control">
+								<option selected>请选择...</option>
+                                <option>北京铁路局</option>
+                                <option>哈尔滨铁路局</option>
+                                <option>呼和浩特铁路局</option>
+                                <option>上海铁路局</option>
+                                <option>沈阳铁路局</option>
+                                <option>太原铁路局</option>
+                                <option>武汉铁路局</option>
+                                <option>西安铁路局</option>
+                                <option>郑州铁路局</option>
+							</select>
+						</div>
+						<div class="form-group col-md-4">
+							<label for="inputState">省份/市/地区</label>
+							<select id="inputState" class="form-control">
+								<option selected>香港特别行政区</option>
+                                <option selected>澳门特别行政区</option>
+								<option>台湾</option>
+							</select>
+						</div>
+                        <button type="submit" class="btn btn-primary">查看</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}
